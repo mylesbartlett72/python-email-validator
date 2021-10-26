@@ -22,3 +22,8 @@ import validate_email
 isvalid, topleveldomain, domain = validate_email.check("email@tocheck.com") # Or whatever email you want.
 ```
 This unpacks the tuple for you, or you can use the tuple on its own, if you wish.  The variables named here are the function responses in the order they appear in the tuple.
+
+6)For only the validity status, use
+```python
+isvalid = validate_email.check("email@tocheck.com")[0] # Or whatever email you want.
+```
